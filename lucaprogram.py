@@ -1,4 +1,6 @@
 from sympy import *
+from matplotlib import pyplot
+import numpy as np
 
 x = symbols('x')
 # Part 1
@@ -21,3 +23,7 @@ intercept = y1 - slope*x1
 print("The equation of the line is y =",slope,"x +",intercept)
 
 # Part 3
+graph_var = np.safe_eval(x**2)
+domain = np.array(range(-10, 10))
+print(domain)
+print(graph_var)
